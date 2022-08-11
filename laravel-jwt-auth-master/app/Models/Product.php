@@ -21,9 +21,10 @@ class Product extends Authenticatable implements JWTSubject
      */
     protected $fillable = [
         'name',
-        'jenis',
-        'price',
-        'stok',
+        'sku',
+        'brand',
+        'deskripsi',
+        'variasi'
     ];
 
     /**
