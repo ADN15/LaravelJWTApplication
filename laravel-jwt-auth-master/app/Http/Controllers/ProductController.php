@@ -90,7 +90,10 @@ class ProductController extends Controller
     public function addProduct(Request $request) {
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|between:2,100',
-            'jenis' => 'required|string|between:2,100',
+            'sku' => 'required|string|between:2,100',
+            'brand' => 'required|string|between:2,100',
+            'deskripsi' => 'required|string|between:2,100',
+            'variasi' => 'required|string|between:2,100',
             'price' => 'required|string|between:2,100',
             'stok' => 'nullable',
         ]);
