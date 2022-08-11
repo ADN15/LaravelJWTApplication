@@ -24,7 +24,9 @@ class Product extends Authenticatable implements JWTSubject
         'sku',
         'brand',
         'deskripsi',
-        'variasi'
+        'variasi',
+        'price',
+        'stok'
     ];
 
     /**
